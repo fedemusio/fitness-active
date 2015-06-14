@@ -1,0 +1,9 @@
+<div class = "col-lg-9">
+    <h1>All categories</h1>
+    <ul ng-repeat="cat in categories" style="list-style:none;" id="categories-list">
+    	<li>
+        	<a ng-href="#/category/{{ cat.id }}">{{ cat.CategoryName }}<br></a>
+            <p>{{ cat.Description }}<hr></p>
+        </li>
+  	</ul>
+</div>

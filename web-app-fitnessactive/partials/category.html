@@ -1,0 +1,15 @@
+<div class = "col-lg-9">
+    <h1>{{ category.CategoryName }}</h1>
+    <p>{{ category.Description }}</p>
+    <div class = "well">
+    <h3>Courses in this category</h3>
+        <ul ng-repeat="course in courses" style="list-style:none;">
+			<li><a ng-href="#/course/{{ course.id }}">{{ course.CourseName }}</a></li>
+        </ul>
+    </div>   
+    <ul class="pager">
+        <li><a href="#/all-categories">Back to list</a></li>
+	</ul>         
+</div>
+                
+                    

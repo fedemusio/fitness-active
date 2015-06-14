@@ -1,0 +1,37 @@
+                <div class = "col-lg-9">
+                    <h1 id = "course-name">{{ course.CourseName }}</h1>
+                    <p id = "course-description"> {{ course.Description }}</p>
+                    <img ng-src = {{}} />
+                    <hr>
+                    <div class = "well info-course">
+                        <h2>Courses Info</h2>
+                        <h4>Instructors</h4>
+                        <ul style="list-style:none;">
+							<li><a ng-href="#/instructor/{{ instr1.id }}">{{ instr1.FirstName + " " + instr1.LastName }} </a></li>
+                            <li><a ng-href="#/instructor/{{ instr2.id }}">{{ instr2.FirstName + " " + instr2.LastName }} </a></li>
+                        </ul>
+                        <h4>Category</h4>
+                        <p id = "category"><a ng-href="#/category/{{ category.id }}">{{ category.CategoryName }}</a></p>
+                        <h4>Room</h4>
+                        <p id = "course-room">{{course.Room}}</p>
+                    </div>
+                    <hr>
+                    <h2>Course Schedule</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Thursday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10.15 - 11.15</td>
+                                <td>10.15 - 11.15</td>
+                                <td>17.15 - 18.15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>

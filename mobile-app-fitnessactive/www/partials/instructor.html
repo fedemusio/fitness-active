@@ -1,0 +1,25 @@
+                <div class = "col-lg-6">
+                    <h1 id = "instructor-name">{{instructor.FirstName + " " + instructor.LastName}}</h1>
+                    <p id = "instructor-description">{{instructor.Description}}</p>
+                    <br>
+                    <br>
+                    <h3>Awards</h3>
+                    <p id = "instructor-awards">{{instructor.Awards}}</p>
+                    <br>
+                    <br>
+                    <div class = "well col-lg-12">
+                        <h3>Courses teached</h3>
+                        <ul id = "courses-list" ng-repeat="course in courses">
+				<li><a ng-href="#/course/{{ course.id }}">{{ course.CourseName }}</a></li>
+                        </ul>
+              
+                    </div>
+                             <ul class="pager">
+            		<li><a href="#/all-instructors">Back to list</a></li>
+				</ul>
+                </div>
+                <div class = "col-lg-2">
+                    <img ng-src="{{ instructor.Thumbnail }}" class = "img-rounded" class = "img-responsive" />
+                </div>
+                
+             

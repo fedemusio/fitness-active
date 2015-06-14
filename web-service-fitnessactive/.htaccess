@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /fitnessactive/web-service-fitnessactive/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ RequestHandler.php/$1 [L]

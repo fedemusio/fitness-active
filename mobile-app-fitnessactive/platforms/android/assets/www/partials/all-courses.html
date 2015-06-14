@@ -1,0 +1,15 @@
+                <div class = "col-lg-9">
+                    
+                    <ul class="nav nav-tabs">
+                        <li ng-class="{ active: isalpha }"><a href="#/all-courses/by-alpha">Alphabetic</a></li>
+                        <li ng-class="{ active: islevel }"><a href="#/all-courses/by-level">
+                           By Level
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <h1>Our courses - {{ subtitle  }}</h1>
+                    <ul ng-repeat="course in courses | orderBy:predicate:reverse" id = "courses-alphabetic-list" style="list-style-type:none">
+                        <li><a ng-href="#/course/{{ course.id }}">{{ course.CourseName }}<br></a><span><b>Level: {{ course.Level }}</b></span><br></a><p>{{ course.Description }}<hr></p></li>
+                    </ul>
+                </div>

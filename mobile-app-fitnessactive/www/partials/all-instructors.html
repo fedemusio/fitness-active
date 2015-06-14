@@ -1,0 +1,10 @@
+<div class = "col-lg-9">
+    <h1>All instructors</h1>
+    	<ul ng-repeat="inst in instructors" style="list-style:none;" id="instructors-list">
+            <li>
+                <img ng-src="{{ inst.Thumbnail }}" class="img-circle">
+                <a ng-href="#/instructor/{{ inst.id }}">{{ inst.FirstName + " " + inst.LastName }}<br></a>
+                <p>{{ inst.Description }}<hr></p>
+            </li>
+    	</ul>
+</div>

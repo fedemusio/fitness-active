@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Fitness Active</title>
+        <!-- bootstrap ref -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+        <!-- main.css ref -->
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+		<!-- angular.js ref -->
+        <script src="js/angular.js" type="text/javascript"></script>
+        <script src="js/angular-resource.js" type="text/javascript"></script>
+        <script src="js/angular-route.js" type="text/javascript"></script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/services.js" type="text/javascript"></script>
+        <script src="js/controller.js" type="text/javascript"></script>
+    </head>
+    
+    <body ng-app="fitness-app">
+        
+        <!-- --------------- Header -------------- -->
+        <div class = "jumbotron gym_header">
+            <div class = "container gym_header">
+                <a href = "app.html">
+                    <img id = "logo" src ="images/logo.jpeg">
+                </a>
+            </div>
+        </div>
+        
+        <!-- -------- Navigation bar ------------- -->
+        <div id = "horizontal_bar">
+            <ul class = "nav nav-pills nav-justified">
+                <li>
+                    <a href="#/all-courses/by-alpha">Courses</a>                 </li>
+                <li>
+                    <a href="#/all-instructors">Instructors</a>                   </li>
+                <li>
+                    <a href="#">Rooms</a></li>
+                <li>
+                    <a href="#/all-categories">Categories</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class = "row">
+            
+            <!-- ----------- Vertical menu ----------- -->
+            <div class = "vertical_menu">
+                <div class = "col-lg-2">
+                    <ul class = "nav nav-pills nav-stacked">
+                        <li><a href="#">The gym</a></li>
+                        <li>
+                            <a href="#/location">Where to find us</a>
+                        </li>   
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Instructors of the month</a></li>
+                        <li><a href="#">Our equipment</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#/register">Member Registration</a></li>
+                    </ul>   
+                </div>
+            </div>
+
+            <div class="page-content">
+                <div ng-view></div>
+            </div>
+            
+        </div>
+    
+    </body>
+    
+</html>

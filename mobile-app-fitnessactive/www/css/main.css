@@ -1,0 +1,135 @@
+html,body {
+    margin-bottom: 30px;
+    overflow-x: hidden;  /*Avoid horizontal scrolling*/
+}
+
+/*---------- Header ----------*/
+.jumbotron.gym_header {
+    background-image: url(../images/header.jpg);
+    margin-bottom: 0px; 
+    padding: 48px;
+    width: auto;
+}
+
+#logo {
+    width: 30%;
+    height: 30%;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/*---------- Navigation bar ----------*/
+#navbar {
+    margin-bottom: 0px;
+    display: inline;
+}
+
+#horizontal_bar {
+    width: auto;
+    background-color:brown;
+    font-size: 24px;
+    font-family: inherit;
+}
+
+#horizontal_bar a {
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#horizontal_bar li {
+    border: 1px solid black;
+    border-top-width: 4px;
+    border-bottom-width: 2px;
+}
+
+#horizontal_bar a:hover {
+    background-color: darkred;
+    color: bisque;
+}
+
+/*---------- Vertical menu ----------*/
+.vertical_menu {
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+}
+
+.vertical_menu a {
+    color:black;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: brown;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.vertical_menu a:hover {
+    background-color: darkred;
+    color: black;
+}
+
+/*---------- Page contnent ----------*/
+.page-contnent {
+    display: inline;
+}
+.page-contnent p {
+    display: inline;
+}
+
+. page-contnent img {
+    float: right;
+    clear: both;
+    display: inline;
+}
+
+.well {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+/*---------- Instructors List ----------*/
+#courses-list a {
+    font-size: 20px;
+}
+
+
+/*---------- Instructors List ----------*/
+#instructors-list img {
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#instructors-list a {
+    font-size: 24px;
+}
+
+#instructors-list ul {
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+#instructor-list li {
+    display: inline;
+}
+
+#courses-alphabetic-list a {
+    font-size: 20px;
+}
+
+#categories-list a {
+	font-size: 20px;
+}
+
+/* ------------------------------ fonts ------------------------------ */
+@font-face {
+    font-family: 'Kinetic_Extreme';
+    src: url('../fonts/Kinetic-Extreme-Solid.ttf') format('truetype');
+}
